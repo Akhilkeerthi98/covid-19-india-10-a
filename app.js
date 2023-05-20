@@ -152,8 +152,7 @@ app.delete(
   async (request, response) => {
     const { districtId } = request.params;
     const deleteQuery = `
-        SELECT
-           *
+        DELETE
         FROM 
             district
         WHERE
